@@ -1,0 +1,31 @@
+{
+  "name": "samaracoin",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:db && npm run start:bot",
+    "start:db": "mongod --dbpath=./mongodb --port=60999 --bind_ip [ip] --auth --config=[configpath]",
+    "start:bot": "node index.js"
+  },
+  "keywords": [],
+  "author": "vityaschel <vityaschel@utidteam.com> (https://vityaschel.utidteam.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "dedent": "^0.7.0",
+    "dotenv": "^10.0.0",
+    "fastify": "^3.22.0",
+    "form-data": "^4.0.0",
+    "moment-timezone": "^0.5.33",
+    "mongodb": "^3.6.6",
+    "node-fetch": "^2.6.1",
+    "node-telegram-bot-api": "^0.53.0",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
